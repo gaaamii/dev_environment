@@ -1,3 +1,5 @@
+# This Dockerfile imitates https://github.com/yss44/docker_rails_base
+
 FROM centos
 MAINTAINER gaaamii
 
@@ -16,16 +18,9 @@ RUN yum -y install gcc make zlib zlib-devel readline readline-devel openssl open
 
 # Install ruby
 # copy ./install.sh to Docker container and run it
-ADD install_ruby.sh install_ruby.sh
-RUN bash -x install_ruby.sh;
-
-# Insta Node
-ADD install_node.sh install_node.sh
-RUN install_node.sh install_node.sh
+ADD install.sh install.sh
+RUN bash -x install.sh;
 
 # Set dotfiles(.vimrc, .bashrc, ..etc.)
 ADD set_dotfiles.sh set_dotfies.sh
 RUN bash -x set_dotfiles.sh
-# wget https://raw.githubusercontent.com/gaaamii/dotfiles/master/.vimrc
-# wget https://raw.githubusercontent.com/gaaamii/dotfiles/master/.bashrc
-# wget https://raw.githubusercontent.com/gaaamii/dotfiles/master/.tmux.conf
