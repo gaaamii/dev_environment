@@ -23,7 +23,7 @@ Build the image from Dockerfile put on current directory.
 
 ### Run Docker container
 ```
-docker run -v /home/vagrant:host -it [image_name] bash
+docker run -v /vagrant:host -it [image_name] bash
 ```
 
 ## Policies
