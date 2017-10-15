@@ -26,10 +26,6 @@ Build the image from Dockerfile put on current directory.
 docker run -v /vagrant:host -it [image_name] bash
 ```
 
-## Policies
-- Less steps
-- Visible as possible
-    
 ## TODO: 
 - Use [Docker for Mac](https://forums.docker.com/c/docker-for-mac)
 - Manage Mac OS setting by [Homebrew Cask](https://caskroom.github.io/)
