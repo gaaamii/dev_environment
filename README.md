@@ -28,7 +28,7 @@ docker run -v /vagrant:host -it [image_name] bash
 
 ## Policies
 - Less steps
-- Keep procedures visible as possible
+- Visible as possible
     
 ## TODO: 
 - Use [Docker for Mac](https://forums.docker.com/c/docker-for-mac)
