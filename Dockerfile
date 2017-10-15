@@ -14,7 +14,7 @@ RUN passwd -f -u gaaamii
 RUN echo "gaaamii ALL=(ALL) ALL" >> /etc/sudoers.d/gaaamii
 
 # Installing Rails Runtime, Ruby and Node.js
-RUN yum -y install gcc make zlib zlib-devel readline readline-devel openssl openssl-devel curl curl-devel bzip2
+RUN yum -y install gcc make zlib zlib-devel readline readline-devel openssl openssl-devel curl curl-devel bzip2 wget
 
 # Install ruby
 # copy ./install.sh to Docker container and run it
