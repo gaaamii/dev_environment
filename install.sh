@@ -14,9 +14,9 @@ if [ ! -d /usr/local/rbenv ];then
     source /etc/profile.d/rbenv.sh
 
     # Install ruby
-    rbenv install 2.2.3
+    rbenv install 2.4.2
     rbenv rehash
-    rbenv global 2.2.3  # default ruby version
+    rbenv global 2.4.2  # default ruby version
 
     #rbenv(add user to rbenv group if you want to use rbenv)
     useradd rbenv
